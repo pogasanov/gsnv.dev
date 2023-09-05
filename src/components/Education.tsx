@@ -1,20 +1,31 @@
 import { Group } from "@/components/Common";
 
-const Education = () => (
-  <div className="flex flex-col gap-4">
-    <Group
-      label="Siberian Federal University"
-      position="MSc of Computer Science"
-      link="https://www.sfu-kras.ru/en"
-      dates={[new Date(2012, 8), new Date(2014, 6)]}
-    />
-    <Group
-      label="Siberian Federal University"
-      position="Bachelor of Computer Science"
-      link="https://www.sfu-kras.ru/en"
-      dates={[new Date(2007, 8), new Date(2012, 6)]}
-    />
-  </div>
-)
+type IProps = {
+  education: {
+    institution: string,
+    url: string,
+    area: string,
+    studyType: string,
+    startDate: string,
+    endDate: string,
+  }[]
+}
+
+const Education = (props: IProps) => {
+  const { education } = props
+
+  return (
+    <div className="flex flex-col gap-4">
+      {education.map(ed => (
+        <Group
+          label={ed.institution}
+          roles={[`${ed.studyType} of ${ed.area}`]}
+          link={ed.url}
+          dates={[new Date(ed.startDate), new Date(ed.endDate)]}
+        />
+      ))}
+    </div>
+  )
+}
 
 export { Education }

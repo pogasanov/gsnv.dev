@@ -3,34 +3,46 @@ import { ReactNode } from "react";
 import Image from "next/image";
 import upworkSvg from "@/assets/upwork.svg";
 
-const Title = () => (
-  <section className="mb-8">
-    <h1 className="text-3xl font-bold leading-loose">Pavel Gasanov</h1>
-    <h5 className="text-gray-500">Software Engineer</h5>
-    <div className="flex flex-wrap gap-4 mt-4">
-      <Social href="mailto:pogasanov@gmail.com">
-        <Mail size={20}/>
-        pogasanov@gmail.com
-      </Social>
-      <Social href="https://github.com/pogasanov/">
-        <Github size={20}/>
-        pogasanov
-      </Social>
-      <Social href="https://twitter.com/pogasanov/">
-        <Twitter size={20}/>
-        pogasanov
-      </Social>
-      <Social href="https://www.linkedin.com/in/pogasanov/">
-        <Linkedin size={20}/>
-        pogasanov
-      </Social>
-      <Social href="https://www.upwork.com/freelancers/~01ca324e515aed29c9/">
-        <Image src={upworkSvg} alt="Upwork icon" width={20}/>
-        pogasanov
-      </Social>
-    </div>
-  </section>
-)
+type IProps = {
+  name: string,
+  label: string,
+  email: string,
+  profiles: {
+    network: string,
+    username: string,
+    url: string,
+  }[]
+}
+
+const Title = (props: IProps) => {
+  const { name, email, label, profiles } = props
+
+  const SocialIcon: Record<string, ReactNode> = {
+    "Github": <Github size={20}/>,
+    "Twitter": <Twitter size={20}/>,
+    "LinkedIn": <Linkedin size={20}/>,
+    "Upwork": <Image src={upworkSvg} alt="Upwork icon" width={20}/>
+  }
+
+  return (
+    <section className="mb-8">
+      <h1 className="text-3xl font-bold leading-loose">{name}</h1>
+      <h5 className="text-gray-500">{label}</h5>
+      <div className="flex flex-wrap gap-4 mt-4">
+        <Social href={`mailto:${email}`}>
+          <Mail size={20}/>
+          {email}
+        </Social>
+        {profiles.map(profile => (
+          <Social href={profile.url}>
+            {SocialIcon[profile.network]}
+            {profile.username}
+          </Social>
+        ))}
+      </div>
+    </section>
+  )
+}
 
 const Social = ({ href, children }: { href: string, children: ReactNode }) => (
   <a
