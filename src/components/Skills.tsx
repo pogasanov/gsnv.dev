@@ -30,7 +30,7 @@ const SkillGroup = ({ label, level, children }: { label: string, level: string, 
   <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
     <div className="flex flex-col max-sm:w-full">
       <h4>{label}</h4>
-      <small className="text-gray-500">{level}</small>
+      <small className="text-gray-500 dark:text-gray-300">{level}</small>
     </div>
     <div className="flex flex-wrap gap-2">
       {children}

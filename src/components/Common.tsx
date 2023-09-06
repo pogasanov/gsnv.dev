@@ -26,7 +26,7 @@ const Group = (props: IProps) => {
           {!link && <span>{label}</span>}
         </h3>
         {dates && (
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-500 dark:text-gray-300">
             <time dateTime={dates[0].toISOString()}>
               {dates[0].toLocaleString('en-US', { month: "short", year: "numeric" })}
             </time>
@@ -37,7 +37,7 @@ const Group = (props: IProps) => {
           </div>
         )}
       </div>
-      <h5 className="text-gray-500 max-sm:text-sm">{roles}</h5>
+      <h5 className="text-gray-500 dark:text-gray-300 max-sm:text-sm">{roles}</h5>
       {children}
     </div>
   )
