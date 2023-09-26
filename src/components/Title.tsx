@@ -33,7 +33,7 @@ const Title = (props: IProps) => {
           {email}
         </Social>
         {profiles.map(profile => (
-          <Social href={profile.url}>
+          <Social key={profile.network} href={profile.url}>
             {SocialIcon[profile.network]}
             {profile.username}
           </Social>

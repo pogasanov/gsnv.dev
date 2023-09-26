@@ -19,7 +19,7 @@ const Skills = (props: IProps) => {
           label={skill.name}
           level={skill.level}
         >
-          {skill.keywords.map(keyword => <Skill>{keyword}</Skill>)}
+          {skill.keywords.map(keyword => <Skill key={keyword}>{keyword}</Skill>)}
         </SkillGroup>
       ))}
     </div>
