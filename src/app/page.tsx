@@ -5,10 +5,13 @@ import { Section } from "@/components/Section";
 import { Languages } from "@/components/Languages";
 import { Skills } from "@/components/Skills";
 import { Education } from "@/components/Education";
+import { Actions } from "@/components/Actions";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[52rem] px-4 py-4 print:p-0 md:py-12">
+    <main className="relative mx-auto max-w-[52rem] px-4 my-4 print:m-0 md:my-12">
+      <Actions/>
+
       <Title
         name={data.basics.name}
         label={data.basics.label}
