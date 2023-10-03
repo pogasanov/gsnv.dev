@@ -16,6 +16,7 @@ const Skills = (props: IProps) => {
     <div>
       {skills.map(skill => (
         <SkillGroup
+          key={skill.name}
           label={skill.name}
           level={skill.level}
         >

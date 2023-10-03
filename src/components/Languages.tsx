@@ -12,6 +12,7 @@ const Languages = (props: IProps) => {
     <div className="flex flex-wrap items-center gap-4 max-sm:gap-2">
       {languages.map(lang => (
         <Language
+          key={lang.language}
           language={lang.language}
           fluency={lang.fluency}
         />

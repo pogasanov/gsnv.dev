@@ -16,8 +16,9 @@ const Education = (props: IProps) => {
 
   return (
     <div className="flex flex-col gap-4">
-      {education.map(ed => (
+      {education.map((ed, index) => (
         <Group
+          key={index}
           label={ed.institution}
           roles={[`${ed.studyType} of ${ed.area}`]}
           link={ed.url}
