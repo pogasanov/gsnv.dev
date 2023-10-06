@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import { Providers } from "@/app/providers";
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <Providers>
       {children}
     </Providers>
+    <Script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="18722992-5b6b-49bc-a253-43386ff6bfa3" async/>
     </body>
     </html>
   )
