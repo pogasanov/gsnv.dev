@@ -6,6 +6,7 @@ import { Languages } from "@/components/Languages";
 import { Skills } from "@/components/Skills";
 import { Education } from "@/components/Education";
 import { Actions } from "@/components/Actions";
+import { Projects } from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -19,12 +20,16 @@ export default function Home() {
         profiles={data.basics.profiles}
       />
 
-      <Section label="Skills">
-        <Skills skills={data.skills}/>
-      </Section>
-
       <Section label="About">
         {data.basics.summary}
+      </Section>
+
+      <Section label="Clients">
+        <Projects projects={data.projects}/>
+      </Section>
+
+      <Section label="Skills">
+        <Skills skills={data.skills}/>
       </Section>
 
       <Section label="Education">

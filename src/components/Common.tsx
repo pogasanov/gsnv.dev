@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 type IProps = {
   label: string,
-  roles: string[],
+  roles?: string[],
   dates?: [Date, Date],
   link?: string,
   children?: ReactNode,
@@ -13,7 +13,7 @@ const Group = (props: IProps) => {
 
   return (
     <div>
-      <div className="mb-2 flex flex-wrap items-baseline justify-between gap-1 max-sm:mb-1">
+      <div className="mb-1 flex flex-wrap items-baseline justify-between gap-1 max-sm:mb-1">
         <h3 className="max-sm:w-full">
           {link && (
             <a
@@ -37,7 +37,7 @@ const Group = (props: IProps) => {
           </div>
         )}
       </div>
-      <h5 className="text-gray-500 dark:text-gray-300 max-sm:text-sm">{roles}</h5>
+      {roles && <h5 className="text-gray-500 dark:text-gray-300 max-sm:text-sm">{roles}</h5>}
       {children}
     </div>
   )

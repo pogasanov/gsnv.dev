@@ -1,11 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lato } from 'next/font/google'
 import { ReactNode } from 'react'
 import { Providers } from "@/app/providers";
 import Script from 'next/script';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Lato({ weight: ["400", "700"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: 'Pavel Gasanov - freelance software developer',

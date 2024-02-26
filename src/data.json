@@ -7,6 +7,16 @@
     "summary": "Pavel is a web engineer and senior full-stack developer with a master's degree in computer science. He has extensive experience in projects of all sizes, from small prototypes to large-scale online intranets, data         processing platforms, content management systems, and long-term React and Django assignments. Pavel is a passionate programmer who loves working in collaborative environments, always finding a common language among team members to bring optimal solutions to complex problems.",
     "profiles": [
       {
+        "network": "Cal",
+        "username": "pogasanov",
+        "url": "https://cal.com/pogasanov/30min"
+      },
+      {
+        "network": "Email",
+        "username": "pogasanov@gmail.com",
+        "url": "mailto:pogasanov@gmail.com"
+      },
+      {
         "network": "Github",
         "username": "pogasanov",
         "url": "https://github.com/pogasanov/"
@@ -50,7 +60,14 @@
     {
       "name": "Front-end",
       "level": "Senior",
-      "keywords": ["JavaScript", "TypeScript", "NextJS", "ReactJS", "Gatsby.js", "Jest"]
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "NextJS",
+        "ReactJS",
+        "Gatsby.js",
+        "Jest"
+      ]
     },
     {
       "name": "Back-end",
@@ -65,12 +82,25 @@
     {
       "name": "CMS",
       "level": "Proficient",
-      "keywords": ["Strapi", "Contentful", "Sanity", "Wordpress"]
+      "keywords": [
+        "Strapi",
+        "Contentful",
+        "Sanity",
+        "Wordpress"
+      ]
     },
     {
       "name": "DevOps",
       "level": "Proficient",
-      "keywords": ["AWS", "Vercel", "Docker", "Serverless"]
+      "keywords": [
+        "AWS",
+        "Vercel",
+        "Modal",
+        "Inngest",
+        "Docker",
+        "Serverless",
+        "Edge"
+      ]
     }
   ],
   "languages": [
@@ -81,6 +111,88 @@
     {
       "language": "English",
       "fluency": "Fluent"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Camcorder AI",
+      "description": "AI-driven video creation platform for marketing teams.",
+      "url": "https://camcorder.ai",
+      "roles": [
+        "Full-stack lead"
+      ],
+      "keywords": [
+        "Next.js",
+        "Typescript",
+        "Modal",
+        "Inngest",
+        "Figma"
+      ],
+      "startDate": "2023-07-17",
+      "type": "application"
+    },
+    {
+      "name": "Icowork",
+      "description": "A user-friendly marketplace for flexible workspaces, providing hassle-free bookings and personalized support for clients' workspace needs.",
+      "url": "https://icowork.co",
+      "roles": [
+        "Full-stack lead"
+      ],
+      "keywords": [
+        "Next.js",
+        "Typescript",
+        "Redux",
+        "Figma",
+        "Django"
+      ],
+      "startDate": "2020-11-01",
+      "endDate": "2022-10-01",
+      "type": "application"
+    },
+    {
+      "name": "Klangkantine",
+      "description": "Full-service recording studio and audio agency and are the partner for high-quality audio productions with passion. Their skills cover the whole range from recording, editing, mixing, and voiceover to audio services for businesses and brands.",
+      "url": "https://klangkantine.de",
+      "roles": [
+        "Full-stack lead"
+      ],
+      "keywords": [
+        "Django",
+        "React",
+        "Typescript"
+      ],
+      "startDate": "2022-11-30",
+      "type": "application"
+    },
+    {
+      "name": "Seriescode",
+      "description": "Series Code is a software development company that provides cloud applications for start-up companies.",
+      "url": "https://seriescode.com/",
+      "roles": [
+        "Full-stack developer"
+      ],
+      "keywords": [
+        "Django",
+        "React",
+        "Vue",
+        "Angular",
+        "Typescript",
+        "FastAPI"
+      ],
+      "type": "application"
+    },
+    {
+      "name": "Chatterbug",
+      "description": "Chatterbug is a modern system for language learning, which goes beyond just self study, and gets you speaking regularly with native speakers.",
+      "url": "https://chatterbug.com",
+      "roles": [
+        "Frontend developer"
+      ],
+      "keywords": [
+        "Gatsby",
+        "Typescript"
+      ],
+      "type": "application"
     }
   ],
   "meta": {
