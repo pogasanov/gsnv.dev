@@ -182,6 +182,21 @@
       "type": "application"
     },
     {
+      "name": "Quickbutik",
+      "description": "Quickbutik offers a solution for those who want to succeed with their business idea within e-commerce.",
+      "url": "https://quickbutik.com",
+      "roles": [
+        "Frontend developer"
+      ],
+      "keywords": [
+        "NextJS",
+        "Gatsby",
+        "Contentful",
+        "Typescript"
+      ],
+      "type": "application"
+    },
+    {
       "name": "Chatterbug",
       "description": "Chatterbug is a modern system for language learning, which goes beyond just self study, and gets you speaking regularly with native speakers.",
       "url": "https://chatterbug.com",
