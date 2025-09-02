@@ -127,6 +127,21 @@
       "type": "application"
     },
     {
+      "name": "Exa AI",
+      "description": "Real-time AI search engine with web crawling API, SERP API, and deep research tools. Search and extract structured content from websites and live data",
+      "url": "https://exa.ai/",
+      "roles": [
+        "Frontend developer"
+      ],
+      "keywords": [
+        "React",
+        "Typescript",
+        "Figma"
+      ],
+      "startDate": "2024-05-03",
+      "type": "application"
+    },
+    {
       "name": "Icowork",
       "description": "A user-friendly marketplace for flexible workspaces, providing hassle-free bookings and personalized support for clients' workspace needs.",
       "url": "https://icowork.co",
